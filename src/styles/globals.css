@@ -1,0 +1,23 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-white antialiased; /* Added antialiased for smoother text */
+  }
+}
+
+/* Custom animations */
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
